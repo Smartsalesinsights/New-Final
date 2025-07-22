@@ -6,7 +6,7 @@ st.set_page_config(page_title="Sales Excel Analyzer", layout="wide")
 st.title("📊 Excel Sales Analyzer with GPT Insights")
 
 # Initialize OpenAI client using Streamlit secrets
-client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
+client = OpenAI.api_key="sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxx"
 
 # File upload
 uploaded_file = st.file_uploader("Upload an Excel file", type=["xlsx", "xls"])
